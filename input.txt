@@ -1,6 +1,6 @@
 class A_B__C::56BCA
 while (a<<<==b!!&&=56bc)
-string str"abc+=56xy+=75\"+=
+string str"abc+=56xy+=75\\"+=
 a+'++'\n'\\'\\'++'++'r
 a=="abc//xyz
 return a.77b.7bc.88.99.5#>a=b=c

@@ -23,15 +23,15 @@ public class Lexer {
     private static final String BOOLEAN_CONSTANT = "\\b(true|false)\\b";
     private static final String INT_CONSTANT = "\\b[0-9]+\\b";
     private static final String FLOAT_CONSTANT = "\\b[0-9]*\\.[0-9]+\\b";
-    private static final String SINGLE_LINE_COMMENT = "#>.*$";
-    private static final String MULTI_LINE_COMMENT = "/\\*~[\\s\\S]*?~\\*/";
+    private static final String SINGLE_LINE_COMMENT = "#[^\\n]*";
+    private static final String MULTI_LINE_COMMENT = "/\\*[\\s\\S]*?\\*/";
     private static final String WHITESPACE = "[ \t\r]+";
     private static final String NEWLINE = "\n";
     private static final String INVALID = ".";
 
     private static final List<TokenDefinition> TOKEN_DEFINITIONS = List.of(
-        new TokenDefinition(TokenType.SINGLE_LINE_COMMENT, SINGLE_LINE_COMMENT),
         new TokenDefinition(TokenType.MULTI_LINE_COMMENT, MULTI_LINE_COMMENT),
+        new TokenDefinition(TokenType.SINGLE_LINE_COMMENT, SINGLE_LINE_COMMENT),
         new TokenDefinition(TokenType.KEYWORD, KEYWORDS),
         new TokenDefinition(TokenType.BOOLEAN_CONSTANT, BOOLEAN_CONSTANT),
         new TokenDefinition(TokenType.OPERATOR, OPERATOR),
@@ -113,7 +113,7 @@ public class Lexer {
     }
 
     public static void main(String[] args) {
-        String filePath = "C:/Users/Xain M-k/Desktop/ALL USEFULL THINGS/New folder/MY_COMPILER/MY_COMPILER/input.txt";
+        String filePath = "input.txt";
 
         try {
             String fileContent = Files.readString(Paths.get(filePath));
