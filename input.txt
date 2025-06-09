@@ -1,7 +1,24 @@
-class A_B__C::56BCA
-while (a<<<==b!!&&=56bc)
-string str"abc+=56xy+=75\\"+=
-a+'++'\n'\\'\\'++'++'r
-a=="abc//xyz
-return a.77b.7bc.88.99.5#>a=b=c
-if_else(( /*a==b+=***//a++
+#> Very simple program following the CFG
+
+import java.util.Scanner;
+
+#> Main class
+public class SimpleProgram {
+    #> Main method
+    public static void main(String[] args) {
+        #> Variable declaration
+        int number = 10;
+        String message = "Hello World";
+        /*~
+        hey Hello
+        ~*/
+        #> Simple output
+        System.out.println(message);
+        System.out.println("The number is: " + number);
+        
+        #> Simple if statement
+        if (number > 5) {
+            System.out.println("Number is greater than 5");
+        }
+    }
+}
