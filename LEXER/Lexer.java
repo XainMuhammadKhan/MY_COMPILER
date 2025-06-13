@@ -25,7 +25,7 @@ public class Lexer {
             new TokenDefinition(TokenType.MULTI_LINE_COMMENT, "/\\*~[\\s\\S]*?~\\*/"),
             new TokenDefinition(TokenType.SINGLE_LINE_COMMENT, "#[^\\n]*"),
             new TokenDefinition(TokenType.KEYWORD, 
-                "\\b(class|function|if|else|return|int|double|char|boolean|void|const|static|enum|break|continue|for|while|public|private|protected|interface|extends|implements|this|super|new|abstract|try|catch|finally|throw|final|true|false|string)\\b"),
+                "\\b(class|function|if|else|return|int|double|char|boolean|void|const|static|enum|import|break|continue|for|while|public|private|protected|interface|extends|implements|this|super|new|abstract|try|catch|finally|throw|final|true|false|string)\\b"),
             new TokenDefinition(TokenType.BOOLEAN_CONSTANT, "\\b(true|false)\\b"),
             new TokenDefinition(TokenType.OPERATOR, 
                 "(\\<\\<\\=|\\>\\>\\=|\\<\\<|\\>\\>|\\<\\=\\>|\\<\\>|\\=\\>|\\+\\+|\\-\\-|\\=\\=|\\!\\=|\\<\\=|\\>\\=|\\&\\&|\\|\\||\\+|\\-|\\*|\\/|\\%|\\=|\\<|\\>|\\!)"),
@@ -76,6 +76,8 @@ public class Lexer {
                 tokens.add(new Token(token.getType(), token.getValue(), startLine));
             }
         }
+        // Add end marker token at the end
+        
         return tokens;
     }
 

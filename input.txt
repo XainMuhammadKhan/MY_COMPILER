@@ -6,19 +6,3 @@ import java.util.Scanner;
 public class SimpleProgram {
     #> Main method
     public static void main(String[] args) {
-        #> Variable declaration
-        int number = 10;
-        String message = "Hello World";
-        /*~
-        hey Hello
-        ~*/
-        #> Simple output
-        System.out.println(message);
-        System.out.println("The number is: " + number);
-        
-        #> Simple if statement
-        if (number > 5) {
-            System.out.println("Number is greater than 5");
-        }
-    }
-}
