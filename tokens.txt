@@ -20,3 +20,11 @@
 <8,Identifier,args>
 <8,Punctuation,)>
 <8,Punctuation,{>
+<9,Identifier,System>
+<9,Punctuation,.>
+<9,Identifier,out>
+<9,Punctuation,.>
+<9,Identifier,println>
+<9,Punctuation,;>
+<10,Punctuation,}>
+<10,Punctuation,}>
